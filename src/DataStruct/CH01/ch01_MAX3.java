@@ -1,4 +1,4 @@
-package DataStruct;
+package DataStruct.CH01;
 
 import java.util.Scanner;
 public class ch01_MAX3 { // 파일 이름과 클래스 이름은 동일해야 한다.

@@ -1,4 +1,4 @@
-package DataStruct;
+package DataStruct.CH01;
 
 import  java.util.Scanner;
 
