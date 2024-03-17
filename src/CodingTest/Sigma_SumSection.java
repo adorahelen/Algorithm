@@ -30,3 +30,4 @@ public class Sigma_SumSection {
         }
     }
 }
+// 예제 입력 1은 잘 나오는데, 예제 입력 2는 다르게 나옴 ;
