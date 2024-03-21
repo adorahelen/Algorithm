@@ -33,19 +33,27 @@ public class jinsuChange {
 
         System.out.println("10진수 기수를 변환합니다.");
         do {
-            do{
+            do {
                 System.out.println("변환하는 음이 아닌 정수: ");
                 no = stdin.nextInt();
 
-            }while (no <0);
+            } while (no < 0);
 
             do {
                 System.out.println("어떤 진수로 변환할까요? (2-256");
                 cd = stdin.nextInt();
             } while (cd < 2 || cd > 36);
 
-            dno = jinsuChange(no, cd, cno);
+            dno = Changer(no, cd, cno);
+            System.out.print(cd + "진수로");
+            for (int i = 0; i < dno; i++)
+                System.out.print(cno[i]);
+            System.out.println("입니다.");
 
-        }
+            System.out.print("한 번 더 할까요? (1...YES / 0...NO ): ");
+            retry = stdin.nextInt();
+
+
+        } while (retry == 1);
     }
 }
