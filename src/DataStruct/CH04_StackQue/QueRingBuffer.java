@@ -33,5 +33,18 @@ public class QueRingBuffer {
     }
 
 
+    // 큐에 데이터를 인큐
+    public int enque(int x) throws OverflowQueueException {
+        if (num >= capacity)
+            throw new OverflowQueueException(); // 큐가 가득 찬 경우
+        que [rear++] = x;
+        num++;
+
+        if (rear == capacity)
+            rear = 0;
+        return x;
+    }
+
+
 
 }
